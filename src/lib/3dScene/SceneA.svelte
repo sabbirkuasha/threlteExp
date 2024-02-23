@@ -40,14 +40,14 @@
 	intensity={2}
 	position={[-4, 4.5, 0]}
 >
-	<!-- <TransformControls
+	<TransformControls
 		object={ref}
 		on:objectChange={() => {
 			console.log(ref);
 			if (!helperWhiteLight) return;
 			helperWhiteLight.update();
 		}}
-	/> -->
+	/>
 	<Portal object={scene}>
 		<T.DirectionalLightHelper args={[ref]} bind:ref={helperWhiteLight} />
 	</Portal>
