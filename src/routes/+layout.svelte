@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Tutorial {$page.url.pathname != '/' ? `| ${$page.url.pathname.slice(1)}` : ''}</title>
+	<title>Tutorial {$page?.url?.pathname != '/' ? `| ${$page?.url?.pathname?.slice(1)}` : ''}</title>
 </svelte:head>
 
 <slot />
